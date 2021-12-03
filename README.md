@@ -6,8 +6,8 @@ npm install
 ```
 
 ## Setup API END POINT
-## As default, it indicates http://localhost:8000/api since we use laravel backend API.
-## You can define it again in .env file on root level.
+#### As default, it indicates http://localhost:8000/api since we use laravel backend API.
+#### You can define it again in .env file on root level.
 ```
 VUE_APP_API_END_POINT=http://localhost:8000/api/
 ```
@@ -17,12 +17,11 @@ VUE_APP_API_END_POINT=http://localhost:8000/api/
 npm run serve
 ```
 
-### Compiles and hot-reloads for development
 ### This command will compile the frontend with api, you will see the link for checking as follow.
 App running at:
   - Local:   http://localhost:8080/ 
   - Network: http://192.168.1.204:8080/
-## Go to browser and paste either of above ones.
+#### Go to browser and paste either of above ones.
 ```
 
 ### Compiles and minifies for production
