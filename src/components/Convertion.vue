@@ -18,6 +18,9 @@ import ConvertionFrom from './ConvertionFrom.vue';
 import ConvertionTo from './ConvertionTo.vue';
 export default {
   name: 'Convertion',
+  metaInfo: {
+    title: 'Dashfi Test Project'
+  },
   components: {
     ConvertionFrom,
     ConvertionTo
@@ -40,9 +43,6 @@ export default {
       this.toCurrency = obj.currency
     },
     convert: function() {
-      console.log(this.fromCurrency);
-      console.log(this.fromCurrency);
-      console.log(this.fromValue);
       this.getExchangedAmount(this.fromCurrency,this.toCurrency,this.fromValue);
     },
     async getData() {
@@ -71,7 +71,6 @@ export default {
     }
   },
   mounted() {
-    console.log();
     this.getData();
   },
 }
