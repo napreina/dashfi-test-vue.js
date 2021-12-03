@@ -48,7 +48,7 @@ export default {
     async getData() {
       try {
         const response = await this.$http.get(
-          "http://localhost:8000/api/currencies"
+          process.env.VUE.APP_API_END_POINT+"currencies"
         );
         // JSON responses are automatically parsed.
         this.currencies = response.data.data
@@ -60,7 +60,7 @@ export default {
       const params = {from:from, to:to, amount:amount};
       try {
         const response = await this.$http.post(
-          "http://localhost:8000/api/exchange",
+          process.env.VUE_APP_API_END_POINT+"exchange",
           params
         );
         // JSON responses are automatically parsed.
@@ -71,6 +71,7 @@ export default {
     }
   },
   mounted() {
+    console.log();
     this.getData();
   },
 }
