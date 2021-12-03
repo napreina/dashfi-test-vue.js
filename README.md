@@ -1,4 +1,4 @@
-# Dashif Test Project Install Guide.
+# Dashio Test Project Install Guide.
 
 ## Project setup
 ```
