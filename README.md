@@ -22,7 +22,6 @@ App running at:
   - Local:   http://localhost:8080/ 
   - Network: http://192.168.1.204:8080/
 #### Go to browser and paste either of above ones.
-```
 
 ### Compiles and minifies for production
 ```
